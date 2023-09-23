@@ -14,7 +14,7 @@ const search = document.querySelector('.search input');
 document.addEventListener('DOMContentLoaded', () => {
     const todos = JSON.parse(localStorage.getItem('todos'));
 
-    if (todos.length > 0) {
+    if (todos) {
         updateTodos();
     } else {
         const firstTodos = ['Go to the gym', 'Buy some fruits', 'Read a book'];
